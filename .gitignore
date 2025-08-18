@@ -1,0 +1,19 @@
+
+__pycache__/
+.idea/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files from editors
+*.swp
+*.swo
+*.tmp
+
+# Build or dist folders
+dist/
+build/

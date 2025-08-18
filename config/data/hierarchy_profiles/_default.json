@@ -1,0 +1,69 @@
+[
+    {
+        "name": "CLIENT NAME",
+        "role": "client",
+        "children": [
+            {
+                "name": "PROJECT NAME",
+                "role": "project",
+                "children": [
+                    {
+                        "name": "Assets",
+                        "role": "assets",
+                        "children": [
+                            {
+                                "name": "ASSET NAME",
+                                "role": "asset",
+                                "children": [
+                                    {
+                                        "name": "maya",
+                                        "role": "maya folder",
+                                        "children": [
+                                            {
+                                                "name": "data",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "images",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "previews",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "scenes",
+                                                "children": [
+                                                    {
+                                                        "name": "model",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "rig",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "scripts",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "sound",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "sourceimages",
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

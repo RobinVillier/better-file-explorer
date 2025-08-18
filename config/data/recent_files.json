@@ -1,0 +1,50 @@
+[
+    {
+        "asset": "Kotoko",
+        "client": "Ansahland",
+        "file_name": "KOTOKO_rig_v001.006.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\Ansahland\\GroundhogPictures\\Assets\\Kotoko\\maya\\scenes\\rig\\KOTOKO_rig_v001.006.ma",
+        "project": "GroundhogPictures",
+        "task": "rig"
+    },
+    {
+        "asset": "Kotoko",
+        "client": "Ansahland",
+        "file_name": "KOTOKO_rig_v001.005.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\Ansahland\\GroundhogPictures\\Assets\\Kotoko\\maya\\scenes\\rig\\KOTOKO_rig_v001.005.ma",
+        "project": "GroundhogPictures",
+        "task": "rig"
+    },
+    {
+        "asset": "KYLE",
+        "client": "Lupin_House",
+        "file_name": "KYLE_rig_v001.001.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\Lupin_House\\re_rig\\Assets\\KYLE\\maya\\scenes\\rig\\KYLE_rig_v001.001.ma",
+        "project": "re_rig",
+        "task": "rig"
+    },
+    {
+        "asset": "CHRISTOPHER",
+        "client": "internal",
+        "file_name": "CHRISTOPHER_modelLowPoly_v001.002.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\internal\\get_better_at_blendshapes\\Assets\\CHRISTOPHER\\maya\\scenes\\model\\CHRISTOPHER_modelLowPoly_v001.002.ma",
+        "project": "get_better_at_blendshapes",
+        "task": "model"
+    },
+    {
+        "asset": "CHRISTOPHER",
+        "client": "internal",
+        "file_name": "CHRISTOPHER_modelLowPoly_v001.001.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\internal\\get_better_at_blendshapes\\Assets\\CHRISTOPHER\\maya\\scenes\\model\\CHRISTOPHER_modelLowPoly_v001.001.ma",
+        "project": "get_better_at_blendshapes",
+        "task": "model"
+    },
+    {
+        "asset": "BIGBUCKBUNNY",
+        "client": "Bellecour",
+        "file_name": "BIGBUCKBUNNY_rig_v001.001.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\Bellecour\\Blendshapes\\Assets\\BIGBUCKBUNNY\\maya\\scenes\\rig\\BIGBUCKBUNNY_rig_v001.001.ma",
+        "project": "Blendshapes",
+        "task": "rig"
+    }
+]

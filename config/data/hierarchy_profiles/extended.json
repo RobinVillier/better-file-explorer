@@ -1,0 +1,102 @@
+[
+    {
+        "name": "CLIENT NAME",
+        "role": "client",
+        "children": [
+            {
+                "name": "client_specific",
+                "children": []
+            },
+            {
+                "name": "PROJECT NAME",
+                "role": "project",
+                "children": [
+                    {
+                        "name": "Assets",
+                        "role": "assets",
+                        "children": [
+                            {
+                                "name": "ASSET NAME",
+                                "role": "asset",
+                                "children": [
+                                    {
+                                        "name": "maya",
+                                        "role": "maya folder",
+                                        "children": [
+                                            {
+                                                "name": "data",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "images",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "previews",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "scenes",
+                                                "children": [
+                                                    {
+                                                        "name": "anim",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "model",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "rig",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "scripts",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "sound",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "sourceimages",
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "client_io",
+                        "children": [
+                            {
+                                "name": "IN",
+                                "children": []
+                            },
+                            {
+                                "name": "OUT",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "docs",
+                        "children": []
+                    },
+                    {
+                        "name": "pipeline",
+                        "children": []
+                    },
+                    {
+                        "name": "project_specific",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    }
+]
