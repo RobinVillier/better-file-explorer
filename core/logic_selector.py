@@ -198,7 +198,15 @@ def display_assets(main_window: QtWidgets.QDialog, current_env: dict):
             "asset": current_env["asset"],
             "task": current_env["task"]
         })
+        # Align date column
         item.setTextAlignment(1, QtCore.Qt.AlignRight | QtCore.Qt.AlignVCenter)
+
+        if "pub" in asset.lower():
+            font = item.font(0)
+            font.setBold(True)
+            item.setFont(0, font)
+            item.setFont(1, font)
+
         main_window.folder_content_list.addTopLevelItem(item)
 
 
