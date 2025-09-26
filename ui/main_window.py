@@ -1,7 +1,6 @@
 from typing import Optional
 
 from PySide2 import QtWidgets, QtCore, QtGui
-from maya import cmds
 
 from BetterFileExplorer.config import settings
 from BetterFileExplorer.core import load
@@ -138,12 +137,12 @@ class BetterFileExplorerUI(QtWidgets.QDialog):
         client_io_tab = QtWidgets.QWidget()
         # client_io_tab.setLayout(self.folder_hierarchy_layout)
 
-        mya_tab = QtWidgets.QWidget()
+        maya_tab = QtWidgets.QWidget()
 
         self.tabs_widget = QtWidgets.QTabWidget()
         self.tabs_widget.addTab(recent_files_tab, "Recent Files")
         self.tabs_widget.addTab(client_io_tab, "Client IO")
-        self.tabs_widget.addTab(mya_tab, "Maya Folder")
+        self.tabs_widget.addTab(maya_tab, "Maya Folder")
 
         self.recent_files_frame = custom_frame.Frame(name="Section", fixed_height=250)
         self.recent_files_frame.content_layout().addWidget(self.tabs_widget)

@@ -2,7 +2,7 @@ from PySide2 import QtWidgets
 import maya.OpenMayaUI as omui
 from shiboken2 import wrapInstance
 
-from BetterFileExplorer.ui import main_window, settings_window, new_profile_window, new_content_window
+from BetterFileExplorer.ui import main_window, settings_window, new_profile_window, new_content_window, save_as_window
 from BetterFileExplorer.core import load
 
 
@@ -50,3 +50,9 @@ def launch_new_content(role: str, window: QtWidgets.QDialog):
     parent = get_maya_main_window()
     window = new_content_window.NewContentUI(parent, role, window)
     window.exec_()
+
+
+def launch_save_as():
+    parent = get_maya_main_window()
+    window = save_as_window.SaveAsUI(parent)
+    window.show()

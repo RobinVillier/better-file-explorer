@@ -41,10 +41,13 @@ class MenuBar(QtWidgets.QMenuBar):
 
         settings_icon = QtGui.QIcon(QtGui.QPixmap(f"{settings.ROOT_DIR}/resources/icons/settings_white.png").scaled(14, 14))
         settings_action = QtWidgets.QAction(settings_icon, "Settings", self)
-
         edit_menu.addAction(settings_action)
-
         settings_action.triggered.connect(main.launch_settings)
+
+        save_as_icon = QtGui.QIcon(QtGui.QPixmap(f"{settings.ROOT_DIR}/resources/icons/save_white_icon.svg").scaled(14, 14))
+        save_as_action = QtWidgets.QAction(save_as_icon, "Save As", self)
+        edit_menu.addAction(save_as_action)
+        save_as_action.triggered.connect(main.launch_save_as)
 
     def create_about_menu(self):
         # About

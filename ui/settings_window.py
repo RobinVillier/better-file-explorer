@@ -16,7 +16,7 @@ class SettingsUI(QtWidgets.QDialog):
 
         self.setWindowTitle(f"Settings  |  {settings.APP_NAME}  |  v{settings.VERSION}")
         self.setMinimumSize(400, 0)
-        self.resize(400, 700)
+        self.resize(400, 650)
         self.setWindowIcon(QtGui.QIcon(f"{settings.ROOT_DIR}/resources/icons/settings_black.svg"))
 
         stylesheet = load.load_qss_with_fixed_urls(rf"{settings.ROOT_DIR}/resources/styles/style.qss")
@@ -179,13 +179,13 @@ class SettingsUI(QtWidgets.QDialog):
         self.folder_hierarchy_layout.addWidget(self.folder_hierarchy_tree_widget)
 
     def create_master_layout(self):
-        master_layout = QtWidgets.QVBoxLayout(self)
-        master_layout.setContentsMargins(10, 10, 10, 10)
-        master_layout.setSpacing(5)
-        master_layout.setAlignment(QtCore.Qt.AlignCenter)
+        _master_layout = QtWidgets.QVBoxLayout(self)
+        _master_layout.setContentsMargins(10, 10, 10, 10)
+        _master_layout.setSpacing(5)
+        _master_layout.setAlignment(QtCore.Qt.AlignCenter)
 
-        master_layout.addWidget(self.tabs_widget)
-        master_layout.addLayout(self.save_btn_layout)
+        _master_layout.addWidget(self.tabs_widget)
+        _master_layout.addLayout(self.save_btn_layout)
 
     @staticmethod
     def _update_window_widgets(combo_box, folder_hierarchy):
