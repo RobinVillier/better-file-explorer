@@ -54,6 +54,7 @@ QPushButton {
     background: #666;
     border-radius: 3px;
     min-height: 20px;
+    padding: 0 10px;
 }
 
 QPushButton:hover {
@@ -67,7 +68,6 @@ QPushButton:pressed {
 QPushButton#RoundedButton {
     background: #666;
     border-radius: 3px;
-    min-height: 20px;
 }
 
 QPushButton#RoundedButton:hover {
@@ -287,3 +287,8 @@ QSpinBox:down-button {
     subcontrol-position: left;
     image: url(../icons/minus_white.svg);
 }
+
+QLabel#Bold {
+    font-weight: 600;
+}
+

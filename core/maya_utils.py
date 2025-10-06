@@ -33,5 +33,14 @@ def build_path(environment: dict, role: str) -> str:
                             environment.get("asset", ""),
                             "maya",
                             "data")
+    else:
+        return os.path.join(base_path,
+                            environment.get("client", ""),
+                            environment.get("project", ""),
+                            "Assets",
+                            environment.get("asset", ""),
+                            "maya",
+                            "scenes",
+                            role)
 
-    return base_path
+    # return base_path

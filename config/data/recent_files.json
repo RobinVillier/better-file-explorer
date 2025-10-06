@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "asset": "PuppetAvatar",
+        "client": "NexusStudio",
+        "file_name": "PuppetAvatar_rig_v008.001.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\NexusStudio\\Codemates\\Assets\\PuppetAvatar\\maya\\scenes\\rig\\PuppetAvatar_rig_v008.001.ma",
+        "project": "Codemates",
+        "task": "rig"
+    },
+    {
+        "asset": "BobaFett",
+        "client": "TrailerFarm",
+        "file_name": "BobaFett_anim_v001.001.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\TrailerFarm\\FallGuys X Star Wars\\Assets\\BobaFett\\maya\\scenes\\anim\\BobaFett_anim_v001.001.ma",
+        "project": "FallGuys X Star Wars",
+        "task": "anim"
+    },
+    {
+        "asset": "ASSET",
+        "client": "internal",
+        "file_name": "ASSET_rig_v001.001.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\internal\\TestSaveAs\\Assets\\ASSET\\maya\\scenes\\rig\\ASSET_rig_v001.001.ma",
+        "project": "TestSaveAs",
+        "task": "rig"
+    }
+]
