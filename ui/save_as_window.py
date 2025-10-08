@@ -136,10 +136,9 @@ class SaveAsUI(QtWidgets.QDialog):
         self.reload_env_button.clicked.connect(lambda: logic_save_as.update_environment(self))
         self.reload_env_button.clicked.connect(lambda: logic_save_as.update_file_name_preview(self))
 
-    def save_button_clicked(self):
-        self.save_button.clicked.connect(lambda: logic_save_as.save_file(self))
-        self.save_button.clicked.connect(lambda: logic_save_as.update_file_name_preview(self))
-        self.save_button.clicked.connect(self.close)
-
     def v_up_radio_button(self):
         self.version_up_rb.toggled.connect(lambda: logic_save_as.update_file_name_preview(self))
+
+    def save_button_clicked(self):
+        self.save_button.clicked.connect(lambda: logic_save_as.save_file(self))
+        self.save_button.clicked.connect(self.close)

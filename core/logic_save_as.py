@@ -1,4 +1,5 @@
 import os
+import shutil
 
 from maya import cmds
 
@@ -41,6 +42,9 @@ def save_file(window: QtWidgets.QDialog):
     if cmds.file(query=True, sceneName=True):
         cmds.file(save=True, type="mayaAscii", f=True)
 
+    if window.publish_rb.isChecked():
+        create_next_version_on_publish(current_env, path)
+
     cmds.file(rename=os.path.join(path, file_name))
     cmds.file(save=True, type="mayaAscii", f=True)
 
@@ -60,13 +64,24 @@ def get_versions(window: QtWidgets.QDialog, current_env) -> list:
     items_list = os.listdir(path)
     if items_list:
         item_split = items_list[-1].split(".")
-
         version = f"{int(item_split[0][-3:]):03d}"
-        sub_version = f"{int(item_split[-2]) + 1:03d}"
 
         if window.publish_rb.isChecked():
             sub_version = "pub"
+        else:
+            sub_version = f"{int(item_split[-2])+1:03d}"
 
         return [version, sub_version]
     else:
         return ["001", "001"]
+
+
+def create_next_version_on_publish(current_env, path):
+    last_item = os.listdir(path)[-1]
+    item_split = last_item.split(".")
+    version = f"{int(item_split[0][-3:])+1:03d}"
+    next_version_item = f"{current_env['asset']}_{current_env['task']}_v{version}.001.ma"
+
+    origin = os.path.join(path, last_item)
+    destination = os.path.join(path, next_version_item)
+    shutil.copy(origin, destination)

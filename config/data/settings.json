@@ -3,9 +3,9 @@
     "default_task": "lighting",
     "project_path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace",
     "current_environment": {
-        "client": "NexusStudio",
-        "project": "Codemates",
-        "asset": "PuppetAvatar",
+        "client": "internal",
+        "project": "get_better_at_blendshapes",
+        "asset": "CHRISTOPHER",
         "task": "rig"
     },
     "recent_files_amount": "20"

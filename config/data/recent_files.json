@@ -1,5 +1,21 @@
 [
     {
+        "asset": "Kotoko",
+        "client": "Ansahland",
+        "file_name": "KOTOKO_model_v001.001.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\Ansahland\\GroundhogPictures\\Assets\\Kotoko\\maya\\scenes\\model\\KOTOKO_model_v001.001.ma",
+        "project": "GroundhogPictures",
+        "task": "model"
+    },
+    {
+        "asset": "CHRISTOPHER",
+        "client": "internal",
+        "file_name": "CHRISTOPHER_rig_v001.004.ma",
+        "path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace\\internal\\get_better_at_blendshapes\\Assets\\CHRISTOPHER\\maya\\scenes\\rig\\CHRISTOPHER_rig_v001.004.ma",
+        "project": "get_better_at_blendshapes",
+        "task": "rig"
+    },
+    {
         "asset": "PuppetAvatar",
         "client": "NexusStudio",
         "file_name": "PuppetAvatar_rig_v008.001.ma",
