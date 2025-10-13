@@ -3,7 +3,7 @@ from pathlib import Path
 from BetterFileExplorer.core import load
 
 APP_NAME = "BetterFileExplorer"
-VERSION = "1.0"
+VERSION = "1.1"
 
 ROOT_DIR = Path(__file__).parent.parent
 DATA_PATH = os.path.join(ROOT_DIR, "config/data")

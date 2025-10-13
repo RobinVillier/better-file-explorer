@@ -45,8 +45,11 @@ def save_file(window: QtWidgets.QDialog):
     if window.publish_rb.isChecked():
         create_next_version_on_publish(current_env, path)
 
-    cmds.file(rename=os.path.join(path, file_name))
+    new_file = os.path.join(path, file_name)
+    cmds.file(rename=new_file)
     cmds.file(save=True, type="mayaAscii", f=True)
+
+    add_to_recent_files(new_file)
 
 
 def build_name_from_environment(window: QtWidgets.QDialog):
@@ -85,3 +88,29 @@ def create_next_version_on_publish(current_env, path):
     origin = os.path.join(path, last_item)
     destination = os.path.join(path, next_version_item)
     shutil.copy(origin, destination)
+
+
+def add_to_recent_files(path):
+    data_dict = parse_asset_path(path)
+    load.save_recent_file(data_dict)
+
+
+def parse_asset_path(path):
+    norm_path = os.path.normpath(path)
+    parts = norm_path.split(os.sep)
+
+    client = parts[parts.index(load.get_project_file_name()) + 1]
+    project = parts[parts.index(client) + 1]
+    asset = parts[parts.index("Assets") + 1]
+    task = parts[parts.index("scenes") + 1]
+
+    file_name = os.path.basename(norm_path)
+
+    return {
+        "asset": asset,
+        "client": client,
+        "file_name": file_name,
+        "path": norm_path,
+        "project": project,
+        "task": task
+    }

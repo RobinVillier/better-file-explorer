@@ -1,11 +1,11 @@
 {
     "current_hierarchy_profile": "extended",
-    "default_task": "lighting",
+    "default_task": "rig",
     "project_path": "D:/Users/OneDrive/Documents/Projects/zz_ArmaturePersonalWorkspace",
     "current_environment": {
-        "client": "internal",
-        "project": "get_better_at_blendshapes",
-        "asset": "CHRISTOPHER",
+        "client": "Bellecour",
+        "project": "Blendshapes",
+        "asset": "BIGBUCKBUNNY",
         "task": "rig"
     },
     "recent_files_amount": "20"
