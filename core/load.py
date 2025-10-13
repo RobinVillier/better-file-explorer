@@ -54,6 +54,10 @@ def get_project_path() -> str:
     return get_settings()["project_path"]
 
 
+def get_project_file_name() -> str:
+    return get_project_path().split("/")[-1]
+
+
 def get_hierarchy_template_list():
     current_profile = settings.get_current_hierarchy_profile()
     return open_json(f"{settings.DATA_PATH}/hierarchy_profiles/{current_profile}.json")
