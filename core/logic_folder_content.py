@@ -151,10 +151,7 @@ def show_recent_context_menu(tree_widget, pos):
 
 
 def remove_selected_entry(tree_widget, json_data):
-    current_item = tree_widget.currentItem()
     current_selection = tree_widget.selectedItems()
-    print(current_item)
-    print(current_selection)
     for sel in current_selection:
         entry = sel.data(0, QtCore.Qt.UserRole)
         if not entry:
