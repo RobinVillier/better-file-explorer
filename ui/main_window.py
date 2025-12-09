@@ -117,6 +117,7 @@ class BetterFileExplorerUI(QtWidgets.QDialog):
         self.recent_files_tree.setObjectName("AssetList")
         self.recent_files_tree.setHeaderHidden(True)
         self.recent_files_tree.setIndentation(0)
+        self.recent_files_tree.setSelectionMode(QtWidgets.QAbstractItemView.ExtendedSelection)
 
         self.recent_files_layout = QtWidgets.QVBoxLayout()
         self.recent_files_layout.addWidget(self.recent_files_tree)
