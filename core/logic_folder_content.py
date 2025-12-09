@@ -124,10 +124,10 @@ def show_recent_context_menu(tree_widget, pos):
     folder_icon = QtGui.QIcon(QtGui.QPixmap(f"{settings.ROOT_DIR}/resources/icons/folder_white.png").scaled(14, 14))
     open_action = menu.addAction(folder_icon, "Open In Directory")
 
-    # import_icon = QtGui.QIcon(QtGui.QPixmap(f"{settings.ROOT_DIR}/resources/icons/import_white.png").scaled(14, 14))
+    # remove_selected_icon = QtGui.QIcon(QtGui.QPixmap(f"{settings.ROOT_DIR}/resources/icons/import_white.png").scaled(14, 14))
     remove_selected_action = menu.addAction("Remove Selected")
 
-    # reference_icon = QtGui.QIcon(QtGui.QPixmap(f"{settings.ROOT_DIR}/resources/icons/reference_white.svg").scaled(14, 14))
+    # remove_all_icon = QtGui.QIcon(QtGui.QPixmap(f"{settings.ROOT_DIR}/resources/icons/reference_white.svg").scaled(14, 14))
     remove_all_action = menu.addAction("Remove All")
 
     global_pos = tree_widget.viewport().mapToGlobal(pos)
@@ -151,20 +151,21 @@ def show_recent_context_menu(tree_widget, pos):
 
 
 def remove_selected_entry(tree_widget, json_data):
-    current_item = tree_widget.currentItem()
-    entry = current_item.data(0, QtCore.Qt.UserRole)
-    if not entry:
-        return
+    current_selection = tree_widget.selectedItems()
+    for sel in current_selection:
+        entry = sel.data(0, QtCore.Qt.UserRole)
+        if not entry:
+            return
 
-    path_to_remove = entry.get("path")
-    if not path_to_remove:
-        return
+        path_to_remove = entry.get("path")
+        if not path_to_remove:
+            return
 
-    new_recent_data = [item for item in json_data if item.get("path") != path_to_remove]
-    load.save_json(settings.RECENT_FILE_PATH, new_recent_data)
+        new_recent_data = [item for item in json_data if item.get("path") != path_to_remove]
+        load.save_json(settings.RECENT_FILE_PATH, new_recent_data)
 
-    index = tree_widget.indexOfTopLevelItem(current_item)
-    tree_widget.takeTopLevelItem(index)
+        index = tree_widget.indexOfTopLevelItem(sel)
+        tree_widget.takeTopLevelItem(index)
 
 
 def remove_all_entries(tree_widget):
